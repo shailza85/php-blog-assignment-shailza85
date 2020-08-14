@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+}
+dt,ol {
+    color: blue;
+    font-size: large;
+    font-weight: bolder;
+}
+dd,h1 {
+    font-weight: bolder;
+    color: brown;
+}
