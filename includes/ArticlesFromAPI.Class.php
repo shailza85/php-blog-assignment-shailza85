@@ -1,5 +1,5 @@
 <?php
-// Ensure that we aren't pulling Pokemon.Class in multiple times; pull it in if it hasn't run yet.
+// Ensure that we aren't pulling Article.Class in multiple times; pull it in if it hasn't run yet.
 include_once 'Articles.Class.php';
 
 class ArticlesFromAPI extends Articles {

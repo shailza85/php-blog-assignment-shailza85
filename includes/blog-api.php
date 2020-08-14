@@ -1,9 +1,9 @@
 <?php
-// Retrieve list of Pokemon from API.
+// Retrieve list of Articles from json file.
 function retrieveArticle() {
-  // Retrieve response string from API endpoint.
+  // Retrieve response string from API.
   $responseString = file_get_contents( './data/articles.json' );
-  //var_dump( $responseString ); // AWESOME! We're getting a result!
+  //var_dump( $responseString ); // Getting a result in browser!
   // Convert response JSON string into a PHP array / object.
   if ( $responseString !== FALSE ) {
     // Convert the JSON string into a valid PHP object using json_decode().

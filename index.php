@@ -8,7 +8,11 @@ include 'templates/header.php';
 
   <h1><?php echo $title; ?></h1>
 
-  <?php if ( $articles = retrieveArticle() ) : ?>
+ 
+
+  <?php  //Display the retrieved data from json file
+  //call retrieveArticle() function from blog-api.php file.
+  if ( $articles = retrieveArticle() ) : ?>
     <ol>
       <?php foreach ( $articles as $article ) : ?>
         <?php $currentArticle = new ArticlesFromAPI( $article->id, $article->title, $article->content ); ?>
